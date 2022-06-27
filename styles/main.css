@@ -1,7 +1,7 @@
 :root{
-  --nav-color: #F7EC09;
-  --nav-text: #ffffff;
-  --body-color: #3B44F6;
+  --nav-color: #333;
+  --nav-text: #fff;
+  --body-color: #333;
   --card-color: #3EC70B;
   --margin-sm: 0.5rem;
   --margin-md: 1rem; 
@@ -11,10 +11,19 @@
   --font-lg: 2.5rem;
 }
 
+body{
+  background-color: var(--nav-color);
+}
+
 *{
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+}
+
+hr{
+  border: 5px solid whitsmoke;
+  width: 50%;
 }
 .main{
   height: 90vh;
@@ -37,14 +46,70 @@
 }
 
 .navbar{
-  height:10vh;
+  
   display: flex;
+  flex-direction: column;
   background-color: var(--body-color);
   align-items: center;
 }
 
-.navbar > *{
-  margin: 0 1rem;
+.top{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.nav-bottom{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center ;
+  margin: var(--margin-md);
+}
+
+.nav-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+}
+ 
+.nav-list > li {
+list-style: none;
+color: var(--nav-text);
+}
+.placeholder{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: var(--nav-text);
+}
+
+.socials{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon{
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  background-color: aqua;
+  margin: 0 var(--margin-sm)
+}
+
+.logo-wrapper{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding-md);
+}
+.logo{
+  font-size: 48px;
   color: var(--nav-text);
 }
 
@@ -64,6 +129,41 @@
   background-color: var(--card-color);
   border-radius: var(--border-sm);
 }
+
+
+/* HOME */
+
+.home-grid{
+  display: grid;
+  padding: var(--padding-lg);
+  grid-template-areas:
+  "main blog1"
+  "main blog2";
+  grid-template-columns: minmax(70%, 300px) 1fr;
+  grid-template-rows: minmax(300px, 1fr) 1fr;
+
+}
+.hero{
+  grid-area: main;
+  background-color: chocolate;
+  background: url(../assets/images/desk.jpg);
+  background-size: contain;
+}
+.blog1{
+  grid-area: blog1;
+  background-color: cornsilk;
+  background: url(../assets/images/code.jpg);
+  background-size: contain;
+}
+
+.blog2{
+  grid-area: blog2;
+  background-color: blueviolet;
+  background: url(../assets/images/man.jpg);
+  background-size: contain;
+}
+
+
 
 .welcome-wrapper > * {
   margin:  var(--margin-sm) 0;
