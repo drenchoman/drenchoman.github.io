@@ -405,6 +405,22 @@ text-decoration: underline;
   line-height: 1.5;
   padding: var(--padding-sm);
 }
+
+/* FOOTER */
+
+.footer{
+  height: 50vh;
+  display: flex;
+  margin: var(--margin-sm) 0;
+  background-color: #010409;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-bye{
+  color: #fff;
+  margin: var(--margin-md);
+}
   
 @media screen and (max-width: 414px){
   .top{
