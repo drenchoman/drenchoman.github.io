@@ -411,7 +411,6 @@ text-decoration: underline;
 .footer{
   height: 50vh;
   display: flex;
-  margin: var(--margin-sm) 0;
   background-color: #010409;
   justify-content: center;
   align-items: center;
@@ -420,6 +419,10 @@ text-decoration: underline;
 .footer-bye{
   color: #fff;
   margin: var(--margin-md);
+}
+
+.footer-icon{
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(351deg) brightness(104%) contrast(101%);
 }
   
 @media screen and (max-width: 414px){
