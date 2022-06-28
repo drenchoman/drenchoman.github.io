@@ -7,8 +7,8 @@
   <meta name="description" content="" />
   <link rel="stylesheet" type="text/css" href="./styles/main.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="navbar">
@@ -16,27 +16,33 @@
      <div class="placeholder">
     </div>
     <div class="logo-wrapper">
-      <span class="logo">O Town</span>
+      <span class="logo">O TOWN</span>
     </div>
        <div class="socials">
         <div class="social-icon">
-
+          <a href="https://github.com/drenchoman">
+            <img src="./assets/icons/github.svg" alt="Link to Github">
+          </a>
         </div>
-      <div class="social-icon">
-        
+        <div class="social-icon">
+      <a href="https://www.instagram.com/its_oggie/">
+        <img  src="./assets/icons/insta.svg" alt="Link to Insta">
+      </a>
       </div>
       <div class="social-icon">
-        
+      <a href="https://www.linkedin.com/in/oscar-harron/">
+        <img src="./assets/icons/linkedin.svg" alt="Link to Linkedin">
+      </a>
       </div>
     </div>
     </div>
     <hr>
   <nav class="nav-bottom">
     <ul class="nav-list">
-      <li>Home</li>
-      <li>About</li>
-      <li>Core</li>
-      <li>Tech</li>
+      <li><a>Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="#allposts">Blog</a></li>
+      
     </ul>
   </nav>
   </div>
@@ -48,6 +54,20 @@
         <span class="category tech">TECH</span>
         <h2 class="card-title hero-title">
           <a class="white" href="#">What is the difference between Margin, Border and Padding?</a></h2>
+        <div class="card-wrapper">
+      <div class="card-author">
+        <div class="card-pic"></div>
+        <h4>Oscar Harron</h4>
+      </div>
+      <span class="card-date">June 28th,        2022<span>
+    </div>
+    </div>
+
+    <div class="sub main-card">
+      <div class="sub-image"></div>
+        <span class="category tech">TECH</span>
+        <h2 class="card-title hero-title">
+          <a class="white" href="#">What is the difference between a BLT, CLT and BLAT?</a></h2>
         <div class="card-wrapper">
       <div class="card-author">
         <div class="card-pic"></div>
@@ -87,7 +107,7 @@
     </div>
   </div>
   <main>
-  <h2 class="header">All Posts</h2>
+  <h2 id="allposts" class="header">All Posts</h2>
 <div class="grid">
   <div class="card">
     <div class="card-overlay"></div>
