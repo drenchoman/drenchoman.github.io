@@ -410,6 +410,9 @@ text-decoration: underline;
   .top{
     flex-direction: column;
   }
+  #allposts{
+    padding-top: 1rem;
+  }
   .socials{
     padding-bottom:var(--padding-md);
   }
@@ -418,9 +421,12 @@ text-decoration: underline;
     width: 100%;
     padding: 0;
   }
+  .grid{
+    margin: 0;
+  }
   .home-grid{
       grid-template-columns: 1fr;
-      padding: 0;
+      padding: 0 var(--padding-sm);
       margin: 0;
       grid-template-rows: repeat(4, minmax(300px, 400px));
       grid-template-areas: 
@@ -444,10 +450,12 @@ text-decoration: underline;
 }
   
   .about-wrapper{
-      flex-direction: column;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
     }
     .about-right-side{
       width:100%;
       padding: var(--padding-sm);
+      margin: var(--margin-md) 0;
     }
   }
