@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>What are the best practices associated with using classes vs. ids? | O Town</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class="navbar">
+      <div class="top">
+       <div class="placeholder">
+      </div>
+      <div class="logo-wrapper">
+        <span id="home" class="logo">O TOWN</span>
+      </div>
+         <div class="socials">
+          
+          <div class="social-icon">
+        <a href="https://www.instagram.com/its_oggie/">
+          <img  src="../assets/icons/insta.svg" alt="Link to Insta">
+        </a>
+        </div>
+           <div class="social-icon">
+            <a href="https://github.com/drenchoman">
+              <img src="../assets/icons/github.svg" alt="Link to Github">
+            </a>
+          </div>
+        <div class="social-icon">
+        <a href="https://www.linkedin.com/in/oscar-harron/">
+          <img src="../assets/icons/linkedin.svg" alt="Link to Linkedin">
+        </a>
+        </div>
+      </div>
+      </div>
+      <hr>
+    <nav class="nav-bottom">
+      <ul class="nav-list">
+        <li><a class="white" href="../index.html">Home</a></li>
+        <li><a class="white" href="#aboutme">About</a></li>
+        <li><a class="white" href="#allposts">Blog</a></li>
+        
+      </ul>
+    </nav>
+    </div>
+    <main class="blog-wrapper">
+      <div class="top-blog">
+          <h1 class='welcome-header'>What are the best practices associated with using classes vs. ids?
+          </h1>
+        <div class="welcome-wrapper">
+          <div class="welcome-author">
+            <div class="card-pic"></div>
+            <span>Oscar Harron</span>
+            <span class="card-date blog-date">July 1st,        2022<span>
+          </div>
+          <div class="welcome-image-wrapper">
+            <img class="welcome-image" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+          </div>
+        
+              </div>
+        </div>
+       <div class="bottom-blog">
+        <p><strong>Nice one! </strong>You've set up your first website using HTML. Your excitement builds as you open your marvelous creation and... it looks like this. </p>
+        <div class="blog-image-wrapper">
+          <img class="blog-image" src="../assets/images/website.JPG" alt="Hello world! A basic HTML website">
+        </div>
+        <p>Maybe I am not the Picasso of the Web you think to yourself. No worries. Lets use CSS to add some <i>style</i> to your webpage. This can be done using <strong>selectors</strong>. </p>
+
+        <p>In CSS, selectors are used to target an HTML element on your webpage. Once we have an element selected we can use different styles to change how our element looks. This could be by using the color <strong>property</strong> to add a dash of colour to your text or by using the font-size <strong>property</strong> to change its size. </p>
+        
+        <p>There are many different types of selectors in CSS but the two that we are looking at today are <strong>Class</strong> and <strong>ID</strong>.   </p>
+        
+        <h2 class="blog-sub-header">ID vs Class: Adding selectors to your HTML</h2>
+        
+        <p>We will start with ID. ID's are <strong>unique</strong> and should only be used once on a page. If more than one element requires a particular style then you should reconsider using an ID as a selector. </p>
+        <p>To give an element an ID, give it the attribute id="your-id-here" </p>
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="abYzaMO" data-editable="true" data-user="drenchoman" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/drenchoman/pen/abYzaMO">
+          Untitled</a> by Ocsar (<a href="https://codepen.io/drenchoman">@drenchoman</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        <p>In the above, I have given my div an ID of 'supreme-orange-box'. This ID should <strong>only be used once</strong>. No other element on my webpage should have the ID of "supreme-orange-box"</p>
+
+        <p>Classes on the other hand can be used more than once. Using a class means that you can set a style and use that style on <strong>as many elements as you would like.</strong></p>
+        <p>To give an element a class, give it the attribute of class followed by your class name. For example class="awesome-paragraph". You can also add <strong>multiple classes</strong> to an element like I have done in the codepen example, giving my div the class of 'box' and 'blue'. </p>
+        <div class="bq">
+          <span class="quote">"</span>
+         <blockquote>ID for one, Class for many.
+           </blockquote>
+         </div>
+
+         <h2 class="blog-sub-header">Using Class in your CSS.</h2>
+         <p>To use the Class selector we type . followed by your <i>classname-here</i>. Add styling using <strong>CSS properties</strong> such as color or font-size</p>
+         <p>An element can have multiple classes but it is important to note that classes can override eachother if a particular property is specificed twice.</p>
+         <p>In the Codepen below, my div has the class of 'box' and 'yellow'. Under the CSS section you can see that the 'box' class has the background-color: property set to yellow. Below this selector we have a class of 'blue' which has the background-color: property set to blue.  </p>
+         <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="abYzaMO" data-editable="true" data-user="drenchoman" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/drenchoman/pen/abYzaMO">
+          Untitled</a> by Ocsar (<a href="https://codepen.io/drenchoman">@drenchoman</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+         
+         <p>Since our 'blue' selector comes after the 'box' selector, our box becomes the colour blue <strong>overriding the background-color property we set in the box class.</strong></p>
+         <p>Try moving the 'blue' class above the 'box' class and see what happens.</p>
+         <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="abYzaMO" data-editable="true" data-user="drenchoman" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/drenchoman/pen/abYzaMO">
+          Untitled</a> by Ocsar (<a href="https://codepen.io/drenchoman">@drenchoman</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+         <p>As you can see our box is now yellow! This highlights the importance of where our class selectors are placed in our CSS.</p>
+         
+         <h3 id="id-in-css-header" class="blog-sub-header">Using ID in your CSS</h3>
+         <p>To use the ID selector we type # followed by your <i>id-here</i> and then add our styling under the ID selector using CSS declarations</p>
+         <p>What makes ID so unique is that it offers a higher level of specificty when compared to classes. This means that the ID selector will override any of the properties declared under a class selector, no matter where the ID selector is written in your style sheet. </p>
+         <p>Using the same Codepen as before we can see that our box also has an ID of 'orange'. Try uncommenting the orange ID and see what happens to the colour of our box. Is it what you expected?</p>
+         <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="abYzaMO" data-editable="true" data-user="drenchoman" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/drenchoman/pen/abYzaMO">
+          Untitled</a> by Ocsar (<a href="https://codepen.io/drenchoman">@drenchoman</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+         <p>Our box has turned orange despite being at the top of our stylesheet. The ID selector overrides the background-color property specified by our 'box' and 'blue' classes even though they appear further down in our stylesheet.</p>
+         <p>ID's can be pretty powerful eh?</p>
+
+         <h3 id="#other-features" class="blog-sub-header">Other features</h3>
+         <p>One other cool feature of using an ID is that we can navigate to any element that uses an ID. This can be useful for navigation and accessibility.</p>
+         <p>Try <a href="#id-in-css-header">clicking here</a> and watch the page navigate to the 'Using ID in your CSS' header.</p>
+         <p>I recommend you use this feature on elements such as your Page header or Footer. These elements are often unique to a webpage and are appropriate uses of the ID selector.</p>
+        
+         <h3 class="blog-sub-header">Final thoughts</h3>
+         <p>I hope you learnt the differences between ID and class and the best practices around using them. If you are ever wondering whether I should use a Class or ID, remember the simple rule.</p>
+         <div class="bq">
+          <span class="quote">"</span>
+         <blockquote>ID for one, Class for many.
+           </blockquote>
+         </div>
+        
+         <div class="author-card">
+           <div class="author-card-top">
+           <div class="card-pic"></div>
+           <span>Oscar Harron </span>
+           </div>
+           <div class="author-card-bottom">
+             <p>This blog reflects my journey through the <a href="https://devacademy.co.nz/">Dev Academy Bootcamp</a>. 
+              I will be covering topics ranging from Web Development to the deep mysterious life of <a href="https://www.washingtonpost.com/blogs/federal-eye/files/2014/08/Oscar.jpg">Oscar.</a></p>
+           </div>
+         </div>
+        
+         <div class="next-wrapper">
+           <!-- <h3>Next Post <a href="3">Link to title</a>
+           </h3> -->
+           <h3 class="home"><a href="#">Top</a></h3>
+         </div>
+           
+      </main>
+      <footer class="footer">
+        <div class="logo-wrapper">
+          <span class="logo">O TOWN</span>
+        </div>
+        <div class="socials"> 
+          <div class="social-icon">
+            <a href="https://www.instagram.com/its_oggie/">
+            <img class="footer-icon" src="../assets/icons/insta.svg" alt="Link to Insta">
+            </a>
+        </div>
+           <div class="social-icon">
+            <a href="https://github.com/drenchoman">
+              <img class="footer-icon" src="../assets/icons/github.svg" alt="Link to Github">
+            </a>
+          </div>
+        <div class="social-icon">
+          <a href="https://www.linkedin.com/in/oscar-harron/">
+          <img class="footer-icon" src="../assets/icons/linkedin.svg" alt="Link to Linkedin">
+          </a>
+        </div>
+      </div>
+         <ul class="nav-list footer-list">
+        <li><a class="white" href="../index.html">Home</a></li>
+        <li><a class="white" href="../index.html#aboutme">About</a></li>
+        <li><a class="white" href="../index.html#allposts">Blog</a></li>
+        
+      </ul>
+       <div>
+         <p class="footer-bye">Thanks for stopping by</p>
+       </div>
+     </footer>
+            
+    
+  
+  </body>
+</html>

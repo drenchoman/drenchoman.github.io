@@ -1,7 +1,7 @@
 :root{
   --nav-color: #010409;
   --nav-text: #5FD068;
-  --body-color: #F6FBF4;
+  --body-color: #F5f5f5;
   --card-color-text: #fff;
   --card-color: rgba(95, 208, 104, 0.5);
   --color-core: #3AB0FF;
@@ -83,6 +83,7 @@ hr{
   flex-direction: row;
   justify-content: space-evenly;
   width: 50%;
+  padding-bottom: var(--padding-sm);
 }
  
 .nav-list > li {
@@ -130,7 +131,8 @@ color: var(--nav-text);
 .logo{
   font-size: 48px;
   color: var(--nav-text);
-  font-family: 'Monoton', cursive;
+  font-family: 'Monoton', 'Poppins', sans-serif;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -145,13 +147,14 @@ color: var(--nav-text);
 
 .home-wrapper{
   padding: 0 var(--padding-xl);
-  margin: var(--margin-lg) 0;
+  margin: var(--margin-lg) auto;
 }
 
 .home-header, .header{
   font-size: var(--font-md);
   text-align: left;
-  margin: var(--margin-sm) 0;
+  margin: var(--margin-sm) auto;
+  max-width: 1350px;
 }
 
 .home-grid{
@@ -163,6 +166,7 @@ color: var(--nav-text);
   grid-template-rows: 1fr 1fr;
   gap: 25px;
   max-width: 1350px;
+  margin: 0 auto;
 }
 
 .sub{
@@ -182,7 +186,8 @@ color: var(--nav-text);
 }
 
 .sub-image{
-  background: url("https://images.unsplash.com/photo-1654514807104-4d7a88eaaa45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80")
+  /* background: url("https://images.unsplash.com/photo-1654514807104-4d7a88eaaa45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80") */
+  background: url("https://images.unsplash.com/photo-1591336267373-3ec5684c20d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80")
 }
 .hero-image{
   background: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
@@ -207,10 +212,12 @@ color: var(--nav-text);
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 25px;
   width: 100%;
+  max-width: 1350px;
   background-color: var(--body-color);
   grid-template-rows: minmax(300px, 350px);
   grid-auto-rows: minmax(300px, 350px);
   height: 100%;
+  margin: 0 auto;
   
 }
 
@@ -227,8 +234,7 @@ color: var(--nav-text);
 .card-pic{
   width: 30px;
   height: 30px;
-  /* Need to make it a photo of myself */
-  background: url("https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60");
+  background: url("https://media-exp2.licdn.com/dms/image/C5603AQHrIO_L1EriNQ/profile-displayphoto-shrink_200_200/0/1579319528751?e=1661990400&v=beta&t=7zmBfDG580dzfHGiHIA5QUW17k-mb78VL6XMXnALMVY");
   background-size: cover;
   border-radius: 50%;
 }
@@ -475,7 +481,10 @@ text-decoration: underline;
 .about-header{
   font-size: var(--font-md);
   text-align: center;
-  font-family: 'Monoton', cursive;
+  font-family: 'Monoton', 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: var(--font-lg);
+  
 }
 .about-text{
   line-height: 1.5;
@@ -516,12 +525,12 @@ text-decoration: underline;
 
 .top-blog{
   display: flex;
-  background-color: white;
+  background-color: var(--body-color);
   justify-content: center;
   flex-direction: column;
   align-items: center;
   padding: var(--padding-md) 0;
-  postion: relative;
+  position: relative;
 }
 
 .welcome-header{
@@ -556,11 +565,15 @@ text-decoration: underline;
 .welcome-image{
   background-size: cover;
   width: 100%;
-  height: 500px;
+  height: 450px;
 }
 
 .card-date{
-  color:black;
+  color: var(--card-color-text);
+}
+
+.blog-date{
+  color: var(--nav-color);
 }
 
 .bottom-blog{
@@ -571,6 +584,7 @@ text-decoration: underline;
   height: 100%;
   max-width: 80ch;
   margin: 0 auto;
+  background-color: var(--body-color);
   
 }
 
@@ -631,6 +645,7 @@ blockquote{
   max-width: 500px;
  padding: var(--padding-md);
   margin: var(--margin-sm) 0;
+  background-color: #F8F8FF;
 }
 .author-card-top{
   display:flex;
@@ -638,14 +653,14 @@ blockquote{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: var(--margin-md) 0;
+  margin: var(--margin-md);
 }
 .author-card-bottom{
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: 1.5;
-  margin: var(--margin-md) 0;
+  margin: var(--margin-md);
 }
 
 
@@ -662,7 +677,6 @@ blockquote{
 .home{
   align-self: center;
 }
-
 
 @media screen and (max-width: 820px){
   .card-title{
@@ -693,6 +707,33 @@ blockquote{
 
 .about-right-side{
   width:100%;
+}
+
+.bq{
+  margin: var(--margin-md) 0;
+}
+
+.welcome-header, .bq{
+  padding: 0 var(--padding-md);
+  max-width: 70ch;
+}
+
+.welcome-header{
+  max-width: 30ch;
+}
+.welcome-image, .blog-image, .blog-image-1{
+  height: 300px;
+}
+.bottom-blog > p {
+  padding: 0 var(--padding-md);
+  line-height: 1.8;
+  max-width: 70ch;
+
+}
+
+.blog-sub-header{
+  padding: 0 var(--padding-md);
+  max-width: 70ch;
 }
 }
   
@@ -760,6 +801,10 @@ blockquote{
     .about-right-side{
       width:100%;
       
+    }
+
+    .bq{
+      margin: var(--margin-md) 0;
     }
 
     .welcome-header, .bq{
