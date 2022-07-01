@@ -234,7 +234,7 @@ color: var(--nav-text);
 .card-pic{
   width: 30px;
   height: 30px;
-  background: url("https://media-exp2.licdn.com/dms/image/C5603AQHrIO_L1EriNQ/profile-displayphoto-shrink_200_200/0/1579319528751?e=1661990400&v=beta&t=7zmBfDG580dzfHGiHIA5QUW17k-mb78VL6XMXnALMVY");
+  background: url("../assets/images/face.jpg");
   background-size: cover;
   border-radius: 50%;
 }
