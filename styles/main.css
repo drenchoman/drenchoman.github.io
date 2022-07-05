@@ -207,9 +207,9 @@ color: var(--nav-text);
   /* My learning Plan */
   background: url("https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHRlY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60");
 }
-.blog2-image, .card-overlay3{
-  /* BLT CLT */
-  background: url("https://images.unsplash.com/photo-1591336267373-3ec5684c20d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80");
+.blog2-image{
+  /* INTRO TO JS */
+  background: url("https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8amF2YXNjcmlwdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60");
 }
 
 /* MAIN - ALL POSTS */
@@ -261,7 +261,7 @@ color: var(--nav-text);
 
 
 
-.card-overlay, .card-overlay1, .card-overlay2, .card-overlay3, .card-overlay4, .card-overlay5, .card-overlay6, .hero-image, .sub-image, .blog1-image, .blog2-image {
+.card-overlay, .card-overlay1, .card-overlay2, .card-overlay3, .card-overlay4, .card-overlay5, .card-overlay6, .card-overlayholder, .hero-image, .sub-image, .blog1-image, .blog2-image {
   background-size: cover;
   filter: brightness(40%);
   height: 100%;
@@ -272,32 +272,27 @@ color: var(--nav-text);
   border-radius: 10px;
 }
 
-/* .card-overlay{
-  background: url("https://images.unsplash.com/photo-1598128558393-70ff21433be0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXJsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60");
-} */
-
-/* .card-overlay1{
-   background: url("https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60");
-} */
-
-/* .card-overlay2{
-  background: url("https://images.unsplash.com/photo-1531771686035-25f47595c87a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60");
-} */
-
-/* .card-overlay3{
-  background: url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60");
-} */
+.card-overlay3{
+  /* BLT */
+  background: url("https://images.unsplash.com/photo-1591336267373-3ec5684c20d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Ymx0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60");
+} 
 .card-overlay4{
   /* Do You ever wonder why */
   background: url("https://images.unsplash.com/photo-1656775624552-1870a4ec46bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=834&q=80");
 }
 
 .card-overlay5{
-  /* Placeholder */
+  /* Story */
   background: url("https://images.unsplash.com/photo-1616844868051-388575c1c465?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80");
 }
 
 .card-overlay6{
+  /* JS INTRO */
+  background: url("https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8amF2YXNjcmlwdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60")
+}
+
+.card-overlayholder{
+  /* PLACEHOLDER */
   background: url("https://images.unsplash.com/photo-1614469723922-c043ad9fd036?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=727&q=80");
 
 }

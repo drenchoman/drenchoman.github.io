@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>An Introduction to Javascript | O Town</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="A basic introduction to Javascript, looking at the DOM and basic functions." />
+  <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class="navbar">
+      <div class="top">
+       <div class="placeholder">
+      </div>
+      <div class="logo-wrapper">
+        <span id="home" class="logo">O TOWN</span>
+      </div>
+         <div class="socials">
+          
+          <div class="social-icon">
+        <a href="https://www.instagram.com/its_oggie/">
+          <img  src="../assets/icons/insta.svg" alt="Link to Insta">
+        </a>
+        </div>
+           <div class="social-icon">
+            <a href="https://github.com/drenchoman">
+              <img src="../assets/icons/github.svg" alt="Link to Github">
+            </a>
+          </div>
+        <div class="social-icon">
+        <a href="https://www.linkedin.com/in/oscar-harron/">
+          <img src="../assets/icons/linkedin.svg" alt="Link to Linkedin">
+        </a>
+        </div>
+      </div>
+      </div>
+      <hr>
+    <nav class="nav-bottom">
+      <ul class="nav-list">
+        <li><a class="white" href="../index.html">Home</a></li>
+        <li><a class="white" href="../index.html#aboutme">About</a></li>
+        <li><a class="white" href="../index.html#allposts">Blog</a></li>
+        
+      </ul>
+    </nav>
+    </div>
+
+    <main class="blog-wrapper">
+      <div class="top-blog">
+          <h1 class='welcome-header'>An Introduction to Javascript
+          </h1>
+        <div class="welcome-wrapper">
+          <div class="welcome-author">
+            <div class="card-pic"></div>
+            <span>Oscar Harron</span>
+            <span class="card-date blog-date">August 6th, 2022<span>
+          </div>
+          <div class="welcome-image-wrapper">
+            <img class="welcome-image" src="https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8amF2YXNjcmlwdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60">
+          </div>
+        
+              </div>
+        </div>
+        <div class="bottom-blog">
+          <p><strong>Hooray!</strong> You are levelling up your developer skills and have reached a new level. Welcome to Javascript (JS), now things are about to get interesting</p>
+          <p>This introduction will cover Javascripts relationship with HTML and CSS, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling">Control Flow & Loops</a>, the Document Object Model or <a href="#">DOM</a>, the difference between <a href="#">Arrays and Objects</a>, as well as explanation of <a href="#">functions</a> and why they are helpful.</p>
+          <p>Interested in only a particular topic? Click any of the links above to jump ahead, don't worry, I won't be upset.</p>
+          
+          <h3 class="blog-sub-header">JS and its relationship to HTML and CSS</h3>
+          <p>A simple way to understand the relationship between this holy trinity of the Web is to think of it as a house. A house will generally have walls, a roof, different sized rooms and all the snazzy appliances which make living easier.</p>
+          <p>HTML can be thought of as the structure of the house, it is the walls and roofs. Without this fundamental structure there would be no house, just your things scattered around on a empty plot of land.</p>
+          <p>CSS is the decoration of the rooms in your house. The colour of walls, the wooden floors, the L-shaped observatory. It describes how HTML elements look, their size, shape and position. It turns something bland into something grand. </p>
+          <p>JS is the things that you interact with in your home. This could be flicking on the lights, turning the tap on for water or switching the heat pump on for warmth. JS brings all of the <strong>functionality</strong> to the home. On a webpage, JS would do things such as handle the interactions when you click a button, handle your form data when you sign up for a giveaway or load more content when you reach the bottom of a page so you can endlessly scroll on Reddit.</p>
+          <p>JS provides the logic, rules and functionality to a webpage and it is rare to find a website that doesn't use JS</p>
+
+          <h3 class="blog-sub-header">Control Flow & Loops</h3>
+          <p>Control Flow refers to order in which your computer will run your code. It is instructions that are followed in order. Code will be followed exactly as we describe it so we have to be precise in how we give our instructions.
+            </p>
+            <p>In JS our code is read from top to bottom until it reaches instructions which change the control flow. These could be instructions such as <strong>if...else</strong> or <strong>loops</strong></p>
+            <p>To demonstrate control flow we will use the example of making an instant coffee. These instructions could be written as follows </p>
+            <ul class="blog-list">
+              <li>Grab jug</li>
+              <li>Fill jug with water</li>
+              <li>Place jug on base</li>
+              <li>Turn jug on </li>
+              <li>Grab cup</li>
+              <li>Grab coffee</li>
+              <li>Grab teaspoon</li>
+              <li><strong>LOOP:</strong> Open coffee and collect a teaspoon of coffee, and place it into cup, do this two times</li>
+              <li>Check if water is boiled</li>
+              <li><strong>IF:</strong> If boiled, fill cup till it is 75% full, <strong>ELSE</strong> otherwise wait will water is boiled</li>
+              <li>Grab milk</li>
+              <li>Add milk till cup is 95% full</li>
+              <li>Grab teaspoon</li>
+              <li><strong>LOOP:</strong> Stir coffee, water and milk together until it looks drinkable (a computer would understand that right?)</li>
+              <li>Grab cup and drink coffee</li>
+
+            </ul>
+            <p>Who knew making a coffee could be so difficult?</p>
+            <p>As I mentioned before we have to be very precise with our instructions as they will be followed exactly as we describe them.
+              This can be challenging for us if we are not used to being precise and exact with our instructions.
+            </p>
+            <p>In the instructions above you will see a <strong>LOOP</strong> statement. 
+              Loops are an instruction to do something repeatedly. In our example it was getting multiple spoons full of coffee and stirring our drink till it is 'drinkable'.</p>
+            <p>If it is something that is done repeatedly then a loop is likely to be used.</p>
+            <p>Below is a hilarious example of how a computer interprets our instructions. There is no doubt that I have forgotten something in my instructions that would be break the coffee making process</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ct-lOOUqmyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="author-card">
+            <div class="author-card-top">
+            <div class="card-pic"></div>
+            <span>Oscar Harron </span>
+            </div>
+            <div class="author-card-bottom">
+              <p>This blog reflects my journey through the <a href="https://devacademy.co.nz/">Dev Academy Bootcamp</a>. 
+               I will be covering topics ranging from Web Development to the deep mysterious life of <a href="https://www.washingtonpost.com/blogs/federal-eye/files/2014/08/Oscar.jpg">Oscar.</a></p>
+            </div>
+          </div>
+          <div class="next-wrapper">
+            <h3>Next Post: <br> <a href="./learning-plan.html">My Learning Plan</a>
+            </h3>
+            <h3 class="home"><a href="#">Top</a></h3>
+          </div>
+        </main>
+
+        <footer class="footer">
+          <div class="logo-wrapper">
+            <span class="logo">O TOWN</span>
+          </div>
+          <div class="socials"> 
+            <div class="social-icon">
+              <a href="https://www.instagram.com/its_oggie/">
+              <img class="footer-icon" src="../assets/icons/insta.svg" alt="Link to Insta">
+              </a>
+          </div>
+             <div class="social-icon">
+              <a href="https://github.com/drenchoman">
+                <img class="footer-icon" src="../assets/icons/github.svg" alt="Link to Github">
+              </a>
+            </div>
+          <div class="social-icon">
+            <a href="https://www.linkedin.com/in/oscar-harron/">
+            <img class="footer-icon" src="../assets/icons/linkedin.svg" alt="Link to Linkedin">
+            </a>
+          </div>
+        </div>
+           <ul class="nav-list footer-list">
+          <li><a class="white" href="../index.html">Home</a></li>
+          <li><a class="white" href="../index.html#aboutme">About</a></li>
+          <li><a class="white" href="../index.html#allposts">Blog</a></li>
+          
+        </ul>
+         <div>
+           <p class="footer-bye">Thanks for stopping by</p>
+         </div>
+       </footer>
+
+      
+      </body>
