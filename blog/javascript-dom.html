@@ -67,17 +67,17 @@
         </div>
         <div class="bottom-blog">
           <p><strong>Hooray!</strong> You are levelling up your developer skills and have reached a new level. Welcome to Javascript (JS), now things are about to get interesting</p>
-          <p>This introduction will cover Javascripts relationship with HTML and CSS, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling">Control Flow & Loops</a>, the Document Object Model or <a href="#">DOM</a>, the difference between <a href="#">Arrays and Objects</a>, as well as explanation of <a href="#">functions</a> and why they are helpful.</p>
+          <p>This introduction will cover Javascripts <a href="js">relationship</a> with HTML and CSS, <a href="#control">Control Flow & Loops</a>, the Document Object Model or <a href="#dom">DOM</a>, the difference between <a href="#arrays-objects">Arrays and Objects</a>, as well as explanation of <a href="#functions">functions</a> and why they are helpful.</p>
           <p>Interested in only a particular topic? Click any of the links above to jump ahead, don't worry, I won't be upset.</p>
           
-          <h3 class="blog-sub-header">JS and its relationship to HTML and CSS</h3>
+          <h3 id="js" class="blog-sub-header">JS and its relationship to HTML and CSS</h3>
           <p>A simple way to understand the relationship between this holy trinity of the Web is to think of it as a house. A house will generally have walls, a roof, different sized rooms and all the snazzy appliances which make living easier.</p>
           <p>HTML can be thought of as the structure of the house, it is the walls and roofs. Without this fundamental structure there would be no house, just your things scattered around on a empty plot of land.</p>
           <p>CSS is the decoration of the rooms in your house. The colour of walls, the wooden floors, the L-shaped observatory. It describes how HTML elements look, their size, shape and position. It turns something bland into something grand. </p>
           <p>JS is the things that you interact with in your home. This could be flicking on the lights, turning the tap on for water or switching the heat pump on for warmth. JS brings all of the <strong>functionality</strong> to the home. On a webpage, JS would do things such as handle the interactions when you click a button, handle your form data when you sign up for a giveaway or load more content when you reach the bottom of a page so you can endlessly scroll on Reddit.</p>
           <p>JS provides the logic, rules and functionality to a webpage and it is rare to find a website that doesn't use JS</p>
 
-          <h3 class="blog-sub-header">Control Flow & Loops</h3>
+          <h3 id="control" class="blog-sub-header">Control Flow & Loops</h3>
           <p>Control Flow refers to order in which your computer will run your code. It is instructions that are followed in order. Code will be followed exactly as we describe it so we have to be precise in how we give our instructions.
             </p>
             <p>In JS our code is read from top to bottom until it reaches instructions which change the control flow. These could be instructions such as <strong>if...else</strong> or <strong>loops</strong></p>
@@ -109,7 +109,47 @@
             <p>If it is something that is done repeatedly then a loop is likely to be used.</p>
             <p>Below is a hilarious example of how a computer interprets our instructions. There is no doubt that I have forgotten something in my instructions that would be break the coffee making process</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Ct-lOOUqmyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="author-card">
+            
+            <h3 id="dom" class="blog-sub-header">The DOM</h3>
+            <p>The DOM (Document Object Model) is way that we can interact with a webpage. Essentially everything on a webpage is an object that we can interact with using JS.</p>
+            <p>In the code pen below we have a header with the ID header. Looking at our JS file we can see that we have first selected the header and saved it to a variable. We have then interacted with the header by changing its color to red. </p>
+            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="BarjaNq" data-editable="true" data-user="drenchoman" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/drenchoman/pen/BarjaNq">
+              JS Example</a> by Ocsar (<a href="https://codepen.io/drenchoman">@drenchoman</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            <p>Play around and see if you can change its color to something else or try altering the font size</p>
+            <p>Our interactions are not just limited to CSS or stylistic changes. We can also create new elements and add them to the DOM or remove elements. Try uncommenting the 'createParagraph' function and see what happens.</p>
+                        
+            <h3 id="arrays-objects" class="blog-sub-header">Accessing Data from Arrays and Objects</h3>
+            <p>Arrays and Objects are two different ways that we can store data. They are not unique to JS and can be found in nearly all programming languages. </p>
+            <p>Arrays are stored in square brackets [] while Objects are stored in curly brackets {}. They are also accessed in different ways.</p>
+            <p>For example, Arrays can be accessed by specifying the index. If we have an array named fruits = ["Apple", "Orange", "Pear"], then we could access apple by typing fruits[0]. </p>
+            <p>It is important to note that we start at <strong>0</strong> and not 1 when accessing an Array.</p>
+            <p>Objects on the other hand can be accessed using . notation. Objects are defined by key: value pairs so to access a property we name the key that we want to access.</p>
+            <p>For example, in the codepen below, we can access the name of the littleKitty object by typing littleKitty.name (name being the property we want information about)</p>
+            <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="jOzWOwN" data-editable="true" data-user="drenchoman" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/drenchoman/pen/jOzWOwN">
+              Arrays and Objects</a> by Ocsar (<a href="https://codepen.io/drenchoman">@drenchoman</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            <p>Play around with the codepen above and familiarise yourself with the differences between accessing an Array and Object.</p>
+            
+            <h3 id="#functions" class="blog-sub-header">Functions and why they are useful</h3>
+            <p>Functions can be thought of as a set of instructions that perform a task or create something. They usually take an input (a piece of data or info) and return an output (a revised piece of data or info) </p>
+            <p>Functions are useful because there are many times when we want to perform a task more than once. Creating a function means we don't have to repeat ourselves everytime we want to perform a task and can instead let the function do the heavy lifting.</p>
+            <p>Take a look at the <strong>createParagraph function </strong> below. This function helps us to add things that we like. Imagine having to recreate the code everytime we wanted to add a new paragraph.</p>
+            <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="BarjaNq" data-editable="true" data-user="drenchoman" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/drenchoman/pen/BarjaNq">
+              JS Example</a> by Ocsar (<a href="https://codepen.io/drenchoman">@drenchoman</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            <p>In this example, we call our function and define something we like in the first parameter, this will create a paragraph, join the string 'I like' with our parameter and then add it to our HTML.</p>
+            <p>Ultimately, functions make our lives as developers easier be creating a reusable set of instructions that perform a task. <strong>Nice work functions!</strong> </p>
+            <div class="author-card">
             <div class="author-card-top">
             <div class="card-pic"></div>
             <span>Oscar Harron </span>
