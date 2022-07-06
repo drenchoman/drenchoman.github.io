@@ -659,7 +659,7 @@ blockquote{
 }
 
 .blog-list{
-  margin: var(--margin-md) 0;
+  margin: var(--margin-md);
 }
 
 .blog-image, .blog-image-1{
@@ -864,5 +864,11 @@ blockquote{
 
     .blog-sub-header{
       padding: 0 var(--padding-md);
+    }
+
+    .yt-player{
+      width: 100%;
+      padding: var(--padding-md);
+      margin: var(--margin-md) 0;
     }
   }
