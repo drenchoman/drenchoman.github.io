@@ -54,6 +54,14 @@ hr{
   color: var(--nav-text);
 }
 
+#home{
+  font-size: 48px;
+  color: var(--nav-text);
+  font-family: 'Monoton', 'Poppins', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
 /********** NAVBAR *********/
 
 .navbar{
@@ -136,13 +144,6 @@ color: var(--nav-text);
   justify-content: center;
   align-items: center;
   padding: var(--padding-md);
-}
-.logo{
-  font-size: 48px;
-  color: var(--nav-text);
-  font-family: 'Monoton', 'Poppins', sans-serif;
-  font-weight: 400;
-  text-align: center;
 }
 
 .icon{
