@@ -209,7 +209,7 @@ color: var(--nav-text);
 }
 .blog2-image{
   /* INTRO TO JS */
-  background: url("https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8amF2YXNjcmlwdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60");
+  background: url("https://images.unsplash.com/photo-1508739826987-b79cd8b7da12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODd8fGphdmFzY3JpcHR8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60");
 }
 
 /* MAIN - ALL POSTS */
@@ -637,6 +637,7 @@ blockquote{
 .blog-sub-header{
   align-self: flex-start;
   max-width: 80ch;
+  margin: var(--margin-sm) 0;
 }
 
 .bottom-blog > p {
@@ -854,7 +855,7 @@ blockquote{
       padding: 0 var(--padding-md);
     }
     .welcome-image, .blog-image, .blog-image-1{
-      height: 275px;
+      height: 300px;
     }
     .bottom-blog > p {
       padding: 0 var(--padding-md);
