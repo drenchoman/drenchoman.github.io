@@ -208,7 +208,12 @@ color: var(--nav-text);
   background: url("https://images.unsplash.com/photo-1528629297340-d1d466945dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1522&q=80");
 }
 
-.hero-image, .card-overlay{
+.hero-image{
+  /* Emotional */
+  background: url("https://images.unsplash.com/photo-1472162072942-cd5147eb3902?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80")
+}
+
+.card-overlay{
   /* ID VS CLASSES */
   background: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
 }
@@ -271,7 +276,7 @@ color: var(--nav-text);
 
 
 
-.card-overlay, .card-overlay1, .card-overlay2, .card-overlay3, .card-overlay4, .card-overlay5, .card-overlay6, .card-overlayholder, .hero-image, .sub-image, .blog1-image, .blog2-image {
+.card-overlay, .card-overlay1, .card-overlay2, .card-overlay3, .card-overlay4, .card-overlay5, .card-overlay6, .card-overlay7, .card-overlayholder, .hero-image, .sub-image, .blog1-image, .blog2-image {
   background-size: cover;
   filter: brightness(40%);
   height: 100%;
@@ -299,6 +304,11 @@ color: var(--nav-text);
 .card-overlay6{
   /* JS INTRO */
   background: url("https://images.unsplash.com/photo-1508739826987-b79cd8b7da12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODd8fGphdmFzY3JpcHR8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60")
+}
+
+.card-overlay7{
+  /* Emotional Intelligence */
+  background: url("https://images.unsplash.com/photo-1472162072942-cd5147eb3902?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80")
 }
 
 .card-overlayholder{
@@ -648,6 +658,10 @@ blockquote{
   align-self: flex-start;
   max-width: 80ch;
   margin: var(--margin-sm) 0;
+}
+
+.minor-header{
+  align-self: flex-start;
 }
 
 .bottom-blog > p {
