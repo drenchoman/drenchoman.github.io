@@ -613,6 +613,7 @@ text-decoration: underline;
 .welcome-image{
   background-size: cover;
   width: 100%;
+  max-width: 700px;
   height: 450px;
 }
 
