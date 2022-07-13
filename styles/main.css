@@ -52,7 +52,7 @@ hr{
   border: 6px dashed var(--nav-text);
   width: 50%;
   color: var(--nav-text);
-  max-width: 50px;
+  max-width: 100px;
 }
 
 #home{
