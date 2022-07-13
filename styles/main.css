@@ -696,6 +696,8 @@ blockquote{
 .blog-image-wrapper{
  background-size:cover;
  display: flex;
+ text-align: center;
+ flex-direction: column;
   margin: var(--margin-md);
   max-width: 1000px;
   margin: 1rem auto;
@@ -714,6 +716,7 @@ blockquote{
   width: 100%;
   height: 400px;
   position: relative;
+  margin: var(--margin-sm) 0;
 }
 
 .quote{
@@ -983,7 +986,7 @@ blockquote{
 
     }
 
-    .blog-sub-header{
+    .blog-sub-header, .minor-header{
       padding: 0 var(--padding-md);
     }
 
