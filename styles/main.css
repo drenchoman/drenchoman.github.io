@@ -989,6 +989,9 @@ blockquote{
     .blog-sub-header, .minor-header{
       padding: 0 var(--padding-md);
     }
+    span{
+      padding: 0 var(--padding-sm);
+    }
 
     .yt-player{
       width: 100%;
