@@ -203,30 +203,6 @@ color: var(--nav-text);
   grid-area: blog2;
 }
 
-.sub-image, .card-overlay1{
-  /* Identity Values and Strengths Exploration */
-  background: url("https://images.unsplash.com/photo-1528629297340-d1d466945dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1522&q=80");
-}
-
-.hero-image{
-  /* Emotional */
-  background: url("https://images.unsplash.com/photo-1472162072942-cd5147eb3902?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80")
-}
-
-.card-overlay{
-  /* ID VS CLASSES */
-  background: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-}
-
-.blog1-image, .card-overlay2{
-  /* My learning Plan */
-  background: url("https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHRlY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60");
-}
-.blog2-image{
-  /* INTRO TO JS */
-  background: url("https://images.unsplash.com/photo-1508739826987-b79cd8b7da12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODd8fGphdmFzY3JpcHR8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60");
-}
-
 /* MAIN - ALL POSTS */
 
 .allposts-wrapper{
@@ -276,7 +252,7 @@ color: var(--nav-text);
 
 
 
-.card-overlay, .card-overlay1, .card-overlay2, .card-overlay3, .card-overlay4, .card-overlay5, .card-overlay6, .card-overlay7, .card-overlayholder, .hero-image, .sub-image, .blog1-image, .blog2-image {
+.card-overlay, .card-overlay1, .card-overlay2, .card-overlay3, .card-overlay4, .card-overlay5, .card-overlay6, .card-overlay7, .card-overlay8, .card-overlay9, .card-overlayholder, .hero-image, .sub-image, .blog1-image, .blog2-image {
   background-size: cover;
   filter: brightness(40%);
   height: 100%;
@@ -285,6 +261,40 @@ color: var(--nav-text);
   top: 0;
   left: 0;
   border-radius: 10px;
+}
+
+
+.hero-image{
+  /* Problem solving */
+  background: url("https://images.unsplash.com/photo-1522435229388-6f7a422cd95b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80")
+}
+.sub-image{
+  /* Growth Mindset */
+  background: url("https://images.unsplash.com/photo-1552820755-733e038f86d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+}
+
+.blog1-image{
+  /* Do you ever wonder why*/
+  background: url("https://images.unsplash.com/photo-1656775624552-1870a4ec46bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=834&q=80");
+}
+.blog2-image{
+  /* Intro to JS */
+  background: url("https://images.unsplash.com/photo-1508739826987-b79cd8b7da12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODd8fGphdmFzY3JpcHR8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60");
+}
+
+
+.card-overlay{
+  /* ID VS CLASSES */
+  background: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+}
+
+.card-overlay1{
+  background: url("https://images.unsplash.com/photo-1528629297340-d1d466945dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1522&q=80");
+}
+
+.card-overlay2{
+  background: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+
 }
 
 .card-overlay3{
@@ -303,12 +313,22 @@ color: var(--nav-text);
 
 .card-overlay6{
   /* JS INTRO */
-  background: url("https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80")
+  background: url("https://images.unsplash.com/photo-1508739826987-b79cd8b7da12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODd8fGphdmFzY3JpcHR8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60");
 }
 
 .card-overlay7{
   /* Emotional Intelligence */
   background: url("https://images.unsplash.com/photo-1472162072942-cd5147eb3902?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80")
+}
+
+.card-overlay8{
+  /* Growth Mindset */
+  background: url("https://images.unsplash.com/photo-1552820755-733e038f86d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+}
+
+.card-overlay9{
+  /* Problem Solving */
+  background: url("https://images.unsplash.com/photo-1522435229388-6f7a422cd95b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80")
 }
 
 .card-overlayholder{
