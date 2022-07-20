@@ -11,6 +11,7 @@
   --color-s3: #3EC70B;
   --color-s4: #F24C4C;
   --color-s5: #001E6C;
+  --margin-ss: 0.25rem;
   --margin-sm: 0.5rem;
   --margin-md: 1rem;
   --margin-lg: 2rem;
@@ -253,7 +254,7 @@ color: var(--nav-text);
 
 
 
-.card-overlay, .card-overlay1, .card-overlay2, .card-overlay3, .card-overlay4, .card-overlay5, .card-overlay6, .card-overlay7, .card-overlay8, .card-overlay9, .card-overlayholder, .hero-image, .sub-image, .blog1-image, .blog2-image {
+.card-overlay, .card-overlay1, .card-overlay2, .card-overlay3, .card-overlay4, .card-overlay5, .card-overlay6, .card-overlay7, .card-overlay8, .card-overlay9, .card-overlay10, .card-overlay11, .card-overlayholder, .hero-image, .sub-image, .blog1-image, .blog2-image {
   background-size: cover;
   filter: brightness(40%);
   height: 100%;
@@ -330,6 +331,15 @@ color: var(--nav-text);
 .card-overlay9{
   /* Problem Solving */
   background: url("https://images.unsplash.com/photo-1522435229388-6f7a422cd95b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80")
+}
+
+.card-overlay10{
+  /* Learning Reflections */
+  background: url("https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80")
+}
+
+.card-overlay11{
+  background: url("https://images.unsplash.com/photo-1472457897821-70d3819a0e24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80")
 }
 
 .card-overlayholder{
@@ -684,6 +694,7 @@ blockquote{
 
 .minor-header{
   align-self: flex-start;
+  margin: var(--margin-ss) 0;
 }
 
 .bottom-blog > p {
