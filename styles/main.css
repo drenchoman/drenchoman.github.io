@@ -686,6 +686,12 @@ blockquote{
   bottom: 1rem;
 }
 
+.blog-major-title{
+  align-self: flex-start;
+  max-width: 80ch;
+  margin: var(--margin-md) 0;
+}
+
 .blog-sub-header{
   align-self: flex-start;
   max-width: 80ch;
